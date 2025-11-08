@@ -7,3 +7,41 @@ O algoritmo implementado é o QuickSort em K-partições, em um vetor com qualqu
 <br>Adriel Borges Zanetti
 <br>Gabriel Anael Strotkamp
 <br>Jhônattan Djovane Reolon da Silva.
+
+"Saimon:"
+🧠 Lógica da implementação
+
+Escolher K−1 pivôs.
+– Pode pegar os primeiros, últimos, aleatórios, ou mesmo medianas.
+– Pra simplificar, a gente vai pegar pivôs aleatórios.
+
+Ordenar os pivôs.
+– Isso garante que eles definem intervalos bem delimitados.
+
+Criar K listas vazias (subarrays).
+
+Distribuir os elementos de acordo com os pivôs:
+
+se x < p1 → vai pro primeiro grupo
+
+se p1 ≤ x < p2 → segundo grupo
+
+...
+
+se x ≥ pK-1 → último grupo
+
+Chamar o K-way QuickSort recursivamente em cada grupo.
+
+Concatenar os resultados
+
+💬 Explicação rápida
+
+kWayQuickSort é recursivo igual ao QuickSort normal.
+
+Escolhe k−1 pivôs aleatórios e ordena eles.
+
+Cria k partições (vector<vector<int>> parts(k)).
+
+Cada elemento vai pra partição correspondente de acordo com os pivôs.
+
+Ordena cada partição recursivamente e concatena os resultados.
