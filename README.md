@@ -13,7 +13,8 @@ O algoritmo implementado é o QuickSort em K-partições, em um vetor com qualqu
 
 Escolher K−1 pivôs.
 – Pode pegar os primeiros, últimos, aleatórios, ou mesmo medianas.
-– Pra simplificar, a gente vai pegar pivôs aleatórios.
+– Pra simplificar.
+- Pegando pivôs aleatórios
 
 Ordenar os pivôs.
 – Isso garante que eles definem intervalos bem delimitados.
